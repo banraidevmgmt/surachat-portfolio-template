@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.next-dev/
+out/
+
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
