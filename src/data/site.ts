@@ -15,7 +15,7 @@ export const siteContent = {
       ...sharedProfile,
       role: 'Full-stack Engineer with a system analyst mindset',
       tagline:
-        'Building practical production systems for business workflows, automation, financial documents, and internal operations.',
+        'Production systems built around real business workflows.',
       intro:
         'I design and build software systems that solve operational problems - from rubber trading workflows and queue management to OCR document extraction, PDF-to-CSV conversion, KYC automation, and internal business platforms.',
       about: [
@@ -28,7 +28,7 @@ export const siteContent = {
       availability: 'Open to full-stack engineer, system analyst, senior engineer, and tech lead roles.',
     },
     portfolioContent: {
-      tagline: 'Full-stack developer who turns business workflows into production-ready systems.',
+      tagline: 'Full-stack developer turning business workflows into production-ready systems.',
       bio:
         'I am a full-stack engineer from Chanthaburi, Thailand, focused on system analysis, backend logic, workflow automation, and practical business software. My work covers rubber purchasing systems, queue management, OCR and PDF-to-CSV automation, KYC automation, reporting systems, and Flutter or React applications.',
       sellingPoints: [
@@ -40,7 +40,7 @@ export const siteContent = {
     skillAnalysis: [
       {
         category: 'System Analysis / Workflow Design',
-        level: 'Upper-mid to senior potential',
+        level: 'Upper-mid to senior-track',
         reasoning:
           'Strong experience analyzing business workflows such as rubber purchasing, queue calling, financial document processing, KYC, referral logic, and internal reporting.',
       },
@@ -79,7 +79,7 @@ export const siteContent = {
       {
         title: 'Business workflow translation',
         evidence:
-          'Rubber trading system, queue-calling system for GSB, PDF-to-CSV converter, OCR accounting flow',
+          'Rubber trading system, banking/internal service workflow, PDF-to-CSV converter, OCR accounting flow',
         impact:
           'Can turn manual or unclear operations into structured digital workflows that users can actually operate.',
       },
@@ -221,10 +221,10 @@ export const siteContent = {
     projects: [
       {
         slug: 'gsb-queue-calling-system',
-        name: 'GSB Queue Calling System',
+        name: 'Banking/Internal Service Workflow System',
         year: 'Banking / Internal Operation',
         summary:
-          'Queue-calling system for Government Savings Bank workflow, designed to support branch-level service flow and improve customer handling.',
+          'Queue and service workflow for a banking/internal service environment, designed to support branch-level operations and improve customer handling.',
         problem:
           'Queue operations require clear service flow, visible status, controlled calling behavior, and reliable frontend interaction for staff usage.',
         solution:
@@ -374,7 +374,7 @@ export const siteContent = {
       businessUnderstanding:
         'Strong ability to understand business operations and convert them into software flows, especially for reporting, finance documents, queues, and internal systems.',
       verdict:
-        'Strong full-stack engineer with clear system analyst and senior engineer potential.',
+        'Strong full-stack engineer with system analyst depth and clear senior-track readiness.',
     },
     hiringScore: {
       backend: {
@@ -1071,6 +1071,18 @@ export const siteContent = {
     },
   },
 };
+
+siteContent.th.profile.tagline = 'ระบบ production ที่ออกแบบจาก workflow ธุรกิจจริง';
+siteContent.th.portfolioContent.tagline =
+  'นักพัฒนา full-stack ที่เปลี่ยน workflow ธุรกิจให้เป็นระบบพร้อมใช้งานจริงใน production';
+siteContent.th.skillAnalysis[0].level = 'Upper-mid และอยู่ในเส้นทาง Senior-track';
+siteContent.th.strengths[0].evidence =
+  'ระบบซื้อขายยาง, workflow ภายในองค์กรด้าน banking/service, ตัวแปลง PDF-to-CSV และ OCR accounting flow';
+siteContent.th.projects[0].name = 'ระบบ workflow ภายในองค์กรด้าน Banking Service';
+siteContent.th.projects[0].summary =
+  'ระบบจัดการคิวและ service workflow สำหรับสภาพแวดล้อม banking/internal service ที่ออกแบบเพื่อรองรับการทำงานระดับสาขาและทำให้การบริการมองเห็นสถานะได้ชัดขึ้น';
+siteContent.th.systemProfile.verdict =
+  'เป็น full-stack engineer ที่มีความชัดเจนด้าน system analyst และอยู่ในเส้นทาง Senior-track';
 
 export type Language = keyof typeof siteContent;
 export type SiteContent = (typeof siteContent)[Language];

@@ -46,6 +46,7 @@ export default function Hero({ content }: HeroProps) {
           </div>
           <p className="hero-kicker">{hero.kicker}</p>
           <h1 className="hero-title">{profile.name}</h1>
+          <p className="hero-tagline">{portfolioContent.tagline}</p>
           <p className="hero-role">{profile.role}</p>
           <p className="hero-intro">{profile.intro}</p>
 

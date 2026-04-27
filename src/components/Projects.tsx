@@ -32,24 +32,24 @@ export default function Projects({ content }: ProjectsProps) {
               </div>
 
               <div className="project-detail-grid">
-                <div className="detail-block">
+                <div className="detail-block detail-block-problem">
                   <span className="detail-label">{projectUi.problemLabel}</span>
                   <p>{project.problem}</p>
                 </div>
 
-                <div className="detail-block">
+                <div className="detail-block detail-block-solution">
                   <span className="detail-label">{projectUi.solutionLabel}</span>
                   <p>{project.solution}</p>
                 </div>
 
-                <div className="detail-block">
+                <div className="detail-block detail-block-impact">
                   <span className="detail-label">{projectUi.impactLabel}</span>
                   <p>{project.impact}</p>
                 </div>
               </div>
 
               <div className="project-footer">
-                <div>
+                <div className="project-footer-panel">
                   <span className="detail-label">{projectUi.techLabel}</span>
                   <div className="chip-list">
                     {project.tech.map((item) => (
@@ -60,11 +60,13 @@ export default function Projects({ content }: ProjectsProps) {
                   </div>
                 </div>
 
-                <div>
+                <div className="project-footer-panel">
                   <span className="detail-label">{projectUi.architectureLabel}</span>
-                  <ul className="prose-list">
+                  <ul className="project-architecture-list">
                     {project.architecture.map((item) => (
-                      <li key={item}>{item}</li>
+                      <li className="project-architecture-item" key={item}>
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
